@@ -17,7 +17,8 @@ class ActionCard extends Component {
                 ? (<h3>{this.props.action.action_text}</h3>)
                 : (<>
                     <h3>{this.props.action.action_description}</h3>
-                    <p>Effective Rating: {this.props.action.rating}</p>
+                    <p>Effectiveness Rating: {this.props.action.rating}</p>
+                    <a href={this.props.action.source} alt="Further Information"></a>
                     </>)
 
                 }             
