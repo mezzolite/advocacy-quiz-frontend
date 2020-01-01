@@ -23,6 +23,9 @@ class Main extends Component {
         fetch(BASE_URL)
             .then(response => response.json())
             .then(actions => this.setState({ actions }))
+        fetch(BASE_URL)
+            .then(response => response.json())
+            .then(fullActions => this.setState({ fullActions }))
     }
 
     getActionOne = (array) => {
@@ -99,7 +102,7 @@ class Main extends Component {
             activeCard: null,
             actionClicks: 0
         })
-
+        this.componentDidMount()
     }
 
     render(){
@@ -124,7 +127,7 @@ class Main extends Component {
                 : null
             }
             {this.state.activeComponent === "endCard" 
-                ?(<EndCard points={this.state.points} actions={this.state.fullActions} />)
+                ?(<EndCard points={this.state.points} actions={this.state.fullActions} resetGame={this.resetGame}/>)
                 : null
             }
             </div>
