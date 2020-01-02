@@ -17,8 +17,8 @@ const Header = ({ points, showAllActions, resetGame }) => {
                 <button className="all-actions-button" onClick={handleActionsClick}>See All Advocacy Actions</button>
                 <button className="home-button" onClick={handleHomeClick}>Home</button>
             </nav>
-            <h1>Efficacy in Advocacy</h1>
-            <h2>Do you know what the most effective legislative advocacy strategies are?</h2>
+            <h1>EFFICACY IN ADVOCACY</h1>
+            {/* <h2>Do you know what the most effective legislative advocacy strategies are?</h2> */}
             <aside>
                 <p>Efficacy Points: {points}</p>
             </aside>
