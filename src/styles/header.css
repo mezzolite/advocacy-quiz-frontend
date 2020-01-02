@@ -1,9 +1,62 @@
-/* font-family: 'Asap Condensed', sans-serif;
-font-family: 'Asap', sans-serif; */
+
 
 
 header {
-    background-color: hsl(270, 70%, 60%);
-    font-family: 'Asap', sans-serif; 
+    background-color: hsl(270, 50%, 65%);
+    font-family: 'Barlow', sans-serif;
+}
 
+header > h1 {
+    font-size: 500%;
+    font-weight: bold;
+    padding-bottom: .5%;
+    padding-left: 2%;
+}
+
+header > h2 {
+    font-size: 150%;
+    font-weight: bolder;
+    padding-bottom: 1%;
+    padding-left: 2.2%;
+}
+
+header > aside {
+    font-size: 130%;
+    font-weight: bolder;
+    padding-bottom: 1.5%;
+    padding-left: 2.2%;
+}
+
+nav {
+    float: right;
+    /* margin-right: 2.2%;
+    margin-top: 1%; */
+    padding: 2%;
+
+}
+
+nav > button {
+    color: hsl(270, 80%, 65%) !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: hsl(240, 52%, 90%);
+    padding: 20px;
+    border-radius: 5px;
+    display: inline-block;
+    border: none;
+    transition: all 0.4s ease 0s;
+    font-weight: bold;   
+}
+
+nav > button:hover {
+    background: #434343;
+    letter-spacing: 1px;
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+    transition: all 0.4s ease 0s;
+}
+
+.all-actions-button {
+    margin-right: 1%;
 }

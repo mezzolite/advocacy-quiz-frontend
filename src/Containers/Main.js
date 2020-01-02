@@ -3,6 +3,7 @@ import Header from '../Components/Header'
 import StartScreen from '../Components/StartScreen'
 import ActionContainer from './ActionContainer'
 import EndCard from '../Components/EndCard'
+import FullActionsContainer from './FullActionsContainer'
 
 const BASE_URL = "http://localhost:3000/advocacy_actions"
 
@@ -46,14 +47,17 @@ class Main extends Component {
         this.setState({actions: array})
     }
 
+    showAllActions = () => {
+        this.setState({activeComponent: "fullActionsContainer"})
+    }
+
     handleStartClick = () => {
         this.getActionOne(this.state.actions)
         this.getActionTwo(this.state.actions)
 
         this.setState({
             activeComponent: "actionContainer"
-        })
-        
+        })  
     }
 
     addActiveCard = (actionCard) => {
@@ -108,7 +112,11 @@ class Main extends Component {
     render(){
         return(
             <div className="main-container">
-            <Header points={this.state.points}/>
+            <Header points={this.state.points} showAllActions={this.showAllActions} resetGame={this.resetGame}/>
+            {this.state.activeComponent === "fullActionsContainer"
+                ?(<FullActionsContainer actions={this.state.fullActions} />)
+                : null
+            }
             {this.state.activeComponent === "startScreen"
                 ? (<StartScreen handleStartClick={this.handleStartClick}/>) 
                 : null

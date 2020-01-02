@@ -1,0 +1,16 @@
+.action-container {
+    display: flex;
+    padding: 5%;
+    justify-content: space-around;
+    margin: 2%;
+}
+
+
+.action-card {
+    background-image: url(https://media.defense.gov/2014/Jan/31/2000879795/780/780/0/140115-Z-AY311-055.JPG);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10%;
+    opacity: 90%;
+}
