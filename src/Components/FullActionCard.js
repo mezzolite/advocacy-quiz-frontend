@@ -2,7 +2,7 @@ import React from 'react'
 
 const FullActionCard = ({action}) => {
     return(
-        <div className="action-card">
+        <div className="full-action-card">
             <h3>{action.action_text}</h3>
             <h3>{action.action_description}</h3>
             <p>Effectiveness Rating: {action.rating}</p>

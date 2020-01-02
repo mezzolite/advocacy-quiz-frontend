@@ -25,12 +25,12 @@ class ActionCard extends Component {
             <div className="action-card">
                 {!this.props.activeCard
                 ? (<h3 onClick={this.flipCard}>{this.props.action.action_text}</h3>)
-                : (<>
-                    <h3>{this.props.action.action_description}</h3>
+                : (<div className="back-of-card">
+                    <h4>{this.props.action.action_description}</h4>
                     <p>Effectiveness Rating: {this.props.action.rating}</p>
                     <a href={this.props.action.source} target="_blank" rel="noopener noreferrer">Get Further Information Here</a>
                     <button onClick={this.continueGame}>Continue Quiz</button>
-                    </>)
+                    </div>)
 
                 }             
             </div>
