@@ -8,12 +8,12 @@
 
 
 .action-card {
-    background-image: url(https://media.defense.gov/2014/Jan/31/2000879795/780/780/0/140115-Z-AY311-055.JPG);
+    background-image: url("https://media.defense.gov/2014/Jan/31/2000879795/780/780/0/140115-Z-AY311-055.JPG");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     padding: 8%;
-    opacity: 90%;
+    opacity: 0.9;
     flex-basis: 15rem;
     color: hsl(228, 69%, 9%);
     font-size: 150%;
