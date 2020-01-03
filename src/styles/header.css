@@ -48,7 +48,8 @@ nav > button {
     border: none;
     transition: all 0.4s ease 0s;
     font-weight: bold;
-    cursor: pointer;   
+    cursor: pointer;  
+    outline: 0 !important;
 }
 
 nav > button:hover {

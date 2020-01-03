@@ -1,6 +1,5 @@
 .action-container {
     display: flex;
-    /* padding: 5%; */
     justify-content: space-around;
     font-family: 'Barlow Semi Condensed', sans-serif;
     margin: 5%;
@@ -18,27 +17,30 @@
     flex-basis: 15rem;
     color: hsl(228, 69%, 9%);
     font-size: 150%;
+    align-content: center;
 }
 
-.action-card > h3 {
+.front-of-card > h3 {
     align-self: center;
     background-color: hsl(39, 48%, 46%);
     padding: 20%;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 .back-of-card {
     background-color: hsl(39, 48%, 46%);
-    padding: 5%;
     justify-content: space-between;
+    width: 45vh;
 }
 
 .back-of-card > h4 {
-    margin-bottom: 5%;
+    padding: 5%;
 }
 
 .back-of-card > p {
-    margin-bottom: 5%;
+    padding: 5%;
+    padding-top: 0;
 }
 
 .back-of-card > a {
@@ -53,8 +55,10 @@
     transition: all 0.4s ease 0s;
     font-weight: bold;
     cursor: pointer;   
-    margin-bottom: 5%;
+    /* margin-bottom: 5%; */
     text-align: center;
+    margin: 0 5% 0;
+    width: 85%;
 }
 
 .back-of-card > button {
@@ -69,6 +73,7 @@
     transition: all 0.4s ease 0s;
     font-weight: bold;
     cursor: pointer; 
-    width: 100%; 
+    width: 90%; 
     font-size: 80%;
+    margin: 5%;
 }

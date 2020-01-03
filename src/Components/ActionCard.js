@@ -24,7 +24,9 @@ class ActionCard extends Component {
         return(
             <div className="action-card">
                 {!this.props.activeCard
-                ? (<h3 onClick={this.flipCard}>{this.props.action.action_text}</h3>)
+                ? (<div className="front-of-card">
+                    <h3 onClick={this.flipCard}>{this.props.action.action_text}</h3>
+                    </div>)
                 : (<div className="back-of-card">
                     <h4>{this.props.action.action_description}</h4>
                     <p>Effectiveness Rating: {this.props.action.rating}</p>
