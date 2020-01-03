@@ -1,0 +1,36 @@
+.end-card {
+    background-color:  hsl(39, 48%, 46%);
+    padding: 2%;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    margin: 2%;
+    margin-right: 32%;
+}
+
+.end-card > h2 {
+    font-size: 5vh;
+    font-weight: bold;
+    margin-bottom: 1%;
+}
+
+.end-card > p {
+    font-size: 2vh;
+    margin-bottom: 1%;
+}
+
+.end-card > p > b {
+    font-size: 2.5vh;
+}
+
+.end-card > h4 {
+    font-size: 2vh;
+    margin-bottom: 1%;
+}
+
+.full-action-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around ;
+}
+
+
+

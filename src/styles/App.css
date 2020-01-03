@@ -3,6 +3,7 @@
 @import "./main.css";
 @import "./action.css";
 @import "./endCard.css";
+@import "./fullActionCard.css";
 
 
 body, .App, .main-container {
