@@ -5,7 +5,7 @@ import ActionContainer from './ActionContainer'
 import EndCard from '../Components/EndCard'
 import FullActionsContainer from './FullActionsContainer'
 
-const BASE_URL = "http://localhost:3000/advocacy_actions"
+const BASE_URL = "https://efficacy-in-advocacy-quiz.herokuapp.com/advocacy_actions"
 
 class Main extends Component {
 
