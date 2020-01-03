@@ -8,6 +8,8 @@ The Advocacy Quiz is deployed using Firebase [here](https://efficacy-in-advocacy
 ## Stack:
 React.js
 
+![react logo](https://video-react.js.org/assets/logo.png)
+
 ## Sources: 
 [Lady Liberty Image](https://upload.wikimedia.org/wikipedia/commons/f/fc/Rainbow_Bridge_And_Statue_Of_Liberty_%2851942076%29.jpeg)
 
